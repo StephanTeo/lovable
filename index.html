@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>101 Hacks e Prompts - A Bíblia do Lovable</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#00d4aa',secondary:'#8b5cf6'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Inter', sans-serif; }
+@keyframes pulse {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.5; }
+}
+.animate-pulse {
+animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.gradient-bg {
+background: linear-gradient(135deg, #1e1b4b 0%, #581c87 50%, #7c3aed 100%);
+}
+.hero-glow {
+box-shadow: 0 0 100px rgba(139, 92, 246, 0.3);
+}
+.pulse-glow {
+animation: pulseGlow 2s ease-in-out infinite alternate;
+}
+@keyframes pulseGlow {
+from { box-shadow: 0 0 60px rgba(0, 212, 170, 0.4); }
+to { box-shadow: 0 0 100px rgba(0, 212, 170, 0.6); }
+}
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+<section class="gradient-bg min-h-screen relative overflow-hidden">
+<div class="absolute inset-0" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20technology%20workspace%20with%20purple%20gradient%20background%20and%20floating%20digital%20elements%20coding%20screens%20and%20development%20tools%20in%20a%20futuristic%20office%20environment%20with%20soft%20lighting%20and%20clean%20minimalist%20design%20professional%20atmosphere&width=1920&height=1080&seq=hero-bg&orientation=landscape'); background-size: cover; background-position: center; opacity: 0.1;"></div>
+<div class="relative z-10 container mx-auto px-6 py-16 min-h-screen flex items-center">
+<div class="w-full grid lg:grid-cols-2 gap-16 items-center">
+<div class="text-center lg:text-left">
+<h1 class="text-4xl lg:text-6xl font-black leading-tight mb-8">
+<span class="text-primary">101 HACKS</span>
+<span class="text-white">E</span>
+<span class="text-primary">PROMPTS</span>
+<span class="text-white">QUE VÃO AGILIZAR SEUS PROJETOS</span>
+<span class="text-primary">NO LOVABLE</span>
+</h1>
+<p class="text-xl lg:text-2xl text-gray-200 mb-8 font-medium">
+Descubra os <strong class="text-primary">101 prompts e hacks secretos</strong> que os desenvolvedores no-code estão usando para <strong class="text-white">corrigir bugs no Lovable</strong>, agilizar o desenvolvimento em até <strong class="text-primary">40x mais rápido</strong> e criar projetos incríveis - mesmo sem experiência prévia em programação
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+<div class="flex items-center text-white">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-rocket-line text-primary text-xl"></i>
+</div>
+<span class="font-semibold">40x mais rápido</span>
+</div>
+<div class="flex items-center text-white">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-user-line text-primary text-xl"></i>
+</div>
+<span class="font-semibold">Sem experiência prévia</span>
+</div>
+<div class="flex items-center text-white">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-time-line text-primary text-xl"></i>
+</div>
+<span class="font-semibold">Acesso vitalício</span>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8">
+<div class="text-center">
+<p class="text-gray-300 text-lg mb-2">De R$ 197 por apenas</p>
+<div class="text-5xl font-black text-primary mb-2">R$ 37</div>
+<div class="inline-block bg-primary text-white px-4 py-1 rounded-full text-sm font-bold">
+VITALÍCIO
+</div>
+</div>
+</div>
+<button class="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold text-xl px-12 py-4 !rounded-button transition-all duration-300 animate-pulse whitespace-nowrap">
+QUERO ACELERAR MEUS PROJETOS AGORA
+</button>
+<div class="mt-4 text-center sm:text-left">
+<div class="flex items-center gap-2">
+<div class="text-white text-lg font-semibold">Oferta se encerra em:</div>
+<div id="countdown" class="text-primary text-2xl font-bold"></div>
+</div>
+</div>
+</div>
+<div class="flex justify-center lg:justify-end">
+<div class="relative hero-glow">
+<img src="https://static.readdy.ai/image/ff717b8c8c408debf5c0837c1a155ae9/2fabf436f19807249440f244e8ab790f.png"
+alt="Mestre do Lovable - 101 Hacks e Prompts"
+class="w-80 lg:w-96 object-cover rounded-2xl shadow-2xl">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+O que você vai <span class="text-primary">descobrir</span>
+</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Mais de 101 prompts testados e aprovados por desenvolvedores profissionais
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border border-purple-200">
+<div class="w-16 h-16 flex items-center justify-center bg-purple-500 rounded-2xl mb-6">
+<i class="ri-bug-line text-white text-2xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Correção de Bugs</h3>
+<p class="text-gray-700">Prompts específicos para identificar e corrigir bugs rapidamente no Lovable</p>
+</div>
+<div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border border-green-200">
+<div class="w-16 h-16 flex items-center justify-center bg-green-500 rounded-2xl mb-6">
+<i class="ri-speed-line text-white text-2xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Desenvolvimento Rápido</h3>
+<p class="text-gray-700">Acelere seu desenvolvimento em até 40x com prompts otimizados</p>
+</div>
+<div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-500 rounded-2xl mb-6">
+<i class="ri-lightbulb-line text-white text-2xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Hacks Secretos</h3>
+<p class="text-gray-700">Técnicas avançadas que apenas desenvolvedores experientes conhecem</p>
+</div>
+<div class="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl border border-orange-200">
+<div class="w-16 h-16 flex items-center justify-center bg-orange-500 rounded-2xl mb-6">
+<i class="ri-layout-line text-white text-2xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Design Profissional</h3>
+<p class="text-gray-700">Prompts para criar interfaces modernas e responsivas</p>
+</div>
+<div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl border border-pink-200">
+<div class="w-16 h-16 flex items-center justify-center bg-pink-500 rounded-2xl mb-6">
+<i class="ri-database-line text-white text-2xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Integração de Dados</h3>
+<p class="text-gray-700">Como conectar APIs e bancos de dados de forma eficiente</p>
+</div>
+<div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-2xl border border-indigo-200">
+<div class="w-16 h-16 flex items-center justify-center bg-indigo-500 rounded-2xl mb-6">
+<i class="ri-shield-check-line text-white text-2xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Boas Práticas</h3>
+<p class="text-gray-700">Padrões de código limpo e organizacao de projetos</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<div class="text-primary text-xl font-semibold mb-4">📖 SOBRE O GUIA 📖</div>
+<h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+Mestre do Lovable: Seu <span class="text-primary">Guia de<br>Prompts e Hacks</span> Atualizado
+</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Este guia foi cuidadosamente elaborado para ser a sua fonte mais confiável e atualizada de prompts e hacks específicos para o desenvolvimento com a plataforma Lovable.
+</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-2xl mb-6">
+<i class="ri-flashlight-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Baseado nas Últimas Atualizações</h3>
+<p class="text-gray-600">
+Compreendemos a velocidade com que o ecossistema de desenvolvimento e inteligência artificial evolui. Por isso, garantimos que todo o conteúdo deste guia esteja alinhado com as atualizações mais recentes da plataforma Lovable.
+</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-2xl mb-6">
+<i class="ri-file-text-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Fundamentado na Documentação Oficial</h3>
+<p class="text-gray-600">
+Para assegurar a precisão e a confiabilidade, este guia foi desenvolvido com base em uma pesquisa aprofundada da documentação oficial disponível no site da Lovable, oferecendo práticas validadas diretamente pela fonte.
+</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-2xl mb-6">
+<i class="ri-book-open-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Organização Didática para o Seu Aprendizado</h3>
+<p class="text-gray-600">
+As dicas e truques são apresentadas de forma lógica e progressiva, desde os fundamentos para iniciantes até as estratégias mais avançadas, focando na aplicação prática.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gradient-to-br from-purple-800 via-indigo-900 to-blue-900">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<div class="flex items-center justify-center gap-2 mb-4">
+<i class="ri-gift-line text-primary text-3xl"></i>
+<h2 class="text-3xl font-black text-primary">BÔNUS EXCLUSIVOS</h2>
+<i class="ri-gift-line text-primary text-3xl"></i>
+</div>
+<h3 class="text-4xl lg:text-5xl font-black text-white mb-6">
+ALÉM DOS <span class="text-primary">101</span> PROMPTS,<br>
+VOCÊ TAMBÉM RECEBE:
+</h3>
+</div>
+<div class="max-w-3xl mx-auto space-y-8">
+<div class="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary rounded-full flex-shrink-0">
+<i class="ri-star-line text-white text-2xl"></i>
+</div>
+<h4 class="text-2xl font-bold text-white">BÔNUS #1</h4>
+</div>
+<h5 class="text-xl font-bold text-primary mb-4">
+17 Atualizações do Lovable que Acabaram de Ser Liberadas com o Claude 4 Explicadas Passo a Passo
+</h5>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Descubra como aplicar as <span class="text-primary">17 novíssimas funcionalidades mais recentes</span> que foram liberadas no Lovable</span>
+</li>
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Como aproveitar o <span class="text-primary">poder do Claude 4</span> integrado ao Lovable</span>
+</li>
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Técnicas exclusivas para <span class="text-primary">maximizar sua produtividade</span> com as novas atualizações</span>
+</li>
+</ul>
+<div class="mt-6 p-4 bg-white/5 rounded-xl text-center">
+<p class="text-gray-400 text-sm mb-1">VALOR: <span class="line-through">R$47,00</span></p>
+<p class="text-primary font-bold">GRÁTIS para você hoje!</p>
+</div>
+</div>
+<div class="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary rounded-full flex-shrink-0">
+<i class="ri-star-line text-white text-2xl"></i>
+</div>
+<h4 class="text-2xl font-bold text-white">BÔNUS #2</h4>
+</div>
+<div class="flex flex-col items-center">
+<h5 class="text-xl font-bold text-primary mb-4 text-center">
+Modelos de Email para Recuperar Créditos Perdidos
+</h5>
+<ul class="space-y-4 max-w-2xl">
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Templates prontos para <span class="text-primary">solicitar créditos bônus</span> ao suporte do Lovable</span>
+</li>
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Estratégias específicas para <span class="text-primary">quando você perde muitos créditos</span> tentando corrigir erros</span>
+</li>
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>O truque secreto que aumenta suas chances de <span class="text-primary">conseguir créditos extras</span></span>
+</li>
+</ul>
+<div class="mt-4 p-4 bg-yellow-900/20 rounded-xl max-w-2xl w-full">
+<p class="text-yellow-400 text-sm flex items-center gap-2">
+<i class="ri-error-warning-line"></i>
+<span>Observação: Não é garantido, mas funciona se insistir usando um truque que explico melhor dentro dessa estratégia.</span>
+</p>
+</div>
+</div>
+<div class="mt-6 p-4 bg-white/5 rounded-xl text-center">
+<p class="text-gray-400 text-sm mb-1">VALOR: <span class="line-through">R$27,00</span></p>
+<p class="text-primary font-bold">GRÁTIS para você hoje!</p>
+</div>
+</div>
+<div class="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary rounded-full flex-shrink-0">
+<i class="ri-star-line text-white text-2xl"></i>
+</div>
+<h4 class="text-2xl font-bold text-white">BÔNUS #3</h4>
+</div>
+<div class="flex flex-col items-center">
+<h5 class="text-xl font-bold text-primary mb-4 text-center">
+Pasta Google Drive com Materiais e Prompts Extras
+</h5>
+<ul class="space-y-4 max-w-2xl">
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Prompts extras e hacks <span class="text-primary">ensinados nos vídeos do YouTube</span></span>
+</li>
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Agentes GPTs especialistas <span class="text-primary">em Lovable para usar no ChatGPT</span></span>
+</li>
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Scripts para remover marca d'água <span class="text-primary">do Lovable</span></span>
+</li>
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Scripts de instruções <span class="text-primary">para não perder créditos no Lovable</span></span>
+</li>
+<li class="flex items-start gap-3 text-gray-300">
+<i class="ri-check-line text-primary text-xl mt-1"></i>
+<span>Muitos outros arquivos <span class="text-primary">que serão adicionados constantemente</span></span>
+</li>
+</ul>
+<div class="mt-6 p-4 bg-white/5 rounded-xl text-center">
+<p class="text-gray-400 text-sm mb-1">VALOR: <span class="line-through">R$29,90</span></p>
+<p class="text-primary font-bold">GRÁTIS para você hoje!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+O que dizem os <span class="text-primary">Mestres do Lovable</span>
+</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Veja o que outros desenvolvedores estão falando sobre o guia
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="flex items-center gap-4 mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20young%20brazilian%20man%20with%20short%20dark%20hair%20wearing%20casual%20business%20attire%2C%20natural%20lighting%2C%20neutral%20background%2C%20friendly%20smile&width=64&height=64&seq=test1&orientation=squarish" alt="Foto do usuário" class="w-16 h-16 rounded-full object-cover">
+<div>
+<h4 class="font-bold text-gray-900">Ricardo Oliveira</h4>
+<p class="text-gray-500">Desenvolvedor No-Code</p>
+</div>
+</div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-600">
+"Os prompts são sensacionais! Consegui reduzir o tempo de desenvolvimento dos meus projetos em mais de 60%. O bônus dos templates de email para recuperar créditos já valeu todo o investimento."
+</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="flex items-center gap-4 mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20young%20brazilian%20woman%20with%20long%20dark%20hair%20wearing%20business%20casual%20attire%2C%20natural%20lighting%2C%20neutral%20background%2C%20confident%20smile&width=64&height=64&seq=test2&orientation=squarish" alt="Foto do usuário" class="w-16 h-16 rounded-full object-cover">
+<div>
+<h4 class="font-bold text-gray-900">Amanda Santos</h4>
+<p class="text-gray-500">Designer de Produto</p>
+</div>
+</div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-600">
+"Incrível como os hacks facilitaram meu trabalho! As dicas de integração com APIs e banco de dados são muito práticas. Recomendo para qualquer pessoa que trabalha com Lovable."
+</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="flex items-center gap-4 mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20middle%20aged%20brazilian%20man%20with%20glasses%20wearing%20business%20attire%2C%20natural%20lighting%2C%20neutral%20background%2C%20warm%20smile&width=64&height=64&seq=test3&orientation=squarish" alt="Foto do usuário" class="w-16 h-16 rounded-full object-cover">
+<div>
+<h4 class="font-bold text-gray-900">Carlos Mendes</h4>
+<p class="text-gray-500">Empreendedor Digital</p>
+</div>
+</div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-600">
+"Comprei o guia há 2 semanas e já economizei horas de trabalho. Os prompts para correção de bugs são muito eficientes e as atualizações do Claude 4 vieram em ótima hora!"
+</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+Garantia <span class="text-primary">100% Incondicional</span>
+</h2>
+<p class="text-xl text-gray-600">
+Sua satisfação é nossa prioridade
+</p>
+</div>
+<div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-3xl p-12 border border-green-200">
+<div class="flex flex-col lg:flex-row items-center gap-8">
+<div class="w-32 h-32 flex items-center justify-center bg-green-500 rounded-full flex-shrink-0">
+<i class="ri-shield-check-line text-white text-6xl"></i>
+</div>
+<div>
+<h3 class="text-3xl font-bold text-gray-900 mb-4">7 Dias de Garantia</h3>
+<p class="text-lg text-gray-700 mb-6">
+Se por qualquer motivo você não ficar satisfeito com os prompts e hacks,
+devolvemos 100% do seu dinheiro em até 7 dias. Sem perguntas, sem complicações.
+</p>
+<div class="flex items-center text-green-600 font-semibold">
+<div class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-check-line text-xl"></i>
+</div>
+<span>Risco zero para você</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-900">
+<div class="container mx-auto px-6">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-4xl lg:text-5xl font-black text-white mb-8">
+Não perca esta <span class="text-primary">oportunidade única</span>
+</h2>
+<p class="text-xl text-gray-300 mb-12">
+Junte-se aos milhares de desenvolvedores que já estão usando esses prompts para
+<strong class="text-white">revolucionar seus projetos no Lovable</strong>
+</p>
+<div class="bg-gradient-to-r from-purple-800 to-indigo-800 rounded-3xl p-12 mb-12">
+<div class="grid md:grid-cols-2 gap-8 items-center">
+<div>
+<h3 class="text-3xl font-bold text-white mb-4">O que você recebe hoje:</h3>
+<ul class="text-left space-y-3">
+<li class="flex items-center text-gray-200">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary text-xl"></i>
+</div>
+<span>101 Prompts e Hacks exclusivos</span>
+</li>
+<li class="flex items-center text-gray-200">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary text-xl"></i>
+</div>
+<span>Acesso vitalício ao conteúdo</span>
+</li>
+<li class="flex items-center text-gray-200">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary text-xl"></i>
+</div>
+<span>Atualizações gratuitas</span>
+</li>
+<li class="flex items-center text-gray-200">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-primary text-xl"></i>
+</div>
+<span>Garantia de 7 dias</span>
+</li>
+</ul>
+</div>
+<div class="text-center">
+<div class="text-gray-400 text-lg mb-2 line-through">R$ 197</div>
+<div class="text-6xl font-black text-primary mb-4">R$ 37</div>
+<div class="bg-primary text-white px-6 py-2 rounded-full text-lg font-bold inline-block">
+VITALÍCIO
+</div>
+</div>
+</div>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold text-2xl px-16 py-6 !rounded-button transition-all duration-300 pulse-glow whitespace-nowrap mb-8">
+SIM, EU QUERO ACELERAR MEUS PROJETOS AGORA!
+</button>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-gray-400">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-shield-check-line text-green-400 text-xl"></i>
+</div>
+<span>Pagamento 100% seguro</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-download-line text-blue-400 text-xl"></i>
+</div>
+<span>Download imediato</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-time-line text-orange-400 text-xl"></i>
+</div>
+<span>Acesso vitalício</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+Perguntas <span class="text-primary">Frequentes</span>
+</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Tire suas dúvidas sobre o Mestre do Lovable
+</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-6">
+<div class="bg-white rounded-2xl shadow-lg">
+<button class="w-full px-8 py-6 text-left focus:outline-none">
+<div class="flex items-center justify-between">
+<span class="text-xl font-semibold text-gray-900">Como recebo acesso ao material?</span>
+<i class="ri-arrow-down-s-line text-2xl text-gray-500"></i>
+</div>
+<div class="mt-4 text-gray-600">
+Após a confirmação do pagamento, você receberá um email com as instruções de acesso à área de membros, onde encontrará todo o material disponível para download imediato.
+</div>
+</button>
+</div>
+<div class="bg-white rounded-2xl shadow-lg">
+<button class="w-full px-8 py-6 text-left focus:outline-none">
+<div class="flex items-center justify-between">
+<span class="text-xl font-semibold text-gray-900">Por quanto tempo tenho acesso ao conteúdo?</span>
+<i class="ri-arrow-down-s-line text-2xl text-gray-500"></i>
+</div>
+<div class="mt-4 text-gray-600">
+O acesso é vitalício! Você poderá acessar o material quando quiser e ainda receberá todas as atualizações futuras gratuitamente.
+</div>
+</button>
+</div>
+<div class="bg-white rounded-2xl shadow-lg">
+<button class="w-full px-8 py-6 text-left focus:outline-none">
+<div class="flex items-center justify-between">
+<span class="text-xl font-semibold text-gray-900">Preciso ter experiência prévia com o Lovable?</span>
+<i class="ri-arrow-down-s-line text-2xl text-gray-500"></i>
+</div>
+<div class="mt-4 text-gray-600">
+Não! O material foi desenvolvido para atender tanto iniciantes quanto usuários avançados. Os prompts e hacks são explicados de forma clara e objetiva.
+</div>
+</button>
+</div>
+<div class="bg-white rounded-2xl shadow-lg">
+<button class="w-full px-8 py-6 text-left focus:outline-none">
+<div class="flex items-center justify-between">
+<span class="text-xl font-semibold text-gray-900">Como funciona a garantia?</span>
+<i class="ri-arrow-down-s-line text-2xl text-gray-500"></i>
+</div>
+<div class="mt-4 text-gray-600">
+Oferecemos 7 dias de garantia incondicional. Se você não ficar satisfeito com o material, basta solicitar o reembolso que devolveremos 100% do seu investimento, sem questionamentos.
+</div>
+</button>
+</div>
+<div class="bg-white rounded-2xl shadow-lg">
+<button class="w-full px-8 py-6 text-left focus:outline-none">
+<div class="flex items-center justify-between">
+<span class="text-xl font-semibold text-gray-900">Os prompts funcionam com a versão atual do Lovable?</span>
+<i class="ri-arrow-down-s-line text-2xl text-gray-500"></i>
+</div>
+<div class="mt-4 text-gray-600">
+Sim! Todo o material é constantemente atualizado para acompanhar as últimas versões do Lovable, incluindo as recentes atualizações do Claude 4.
+</div>
+</button>
+</div>
+</div>
+</div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+function updateCountdown() {
+const now = new Date().getTime();
+const endTime = now + (60 * 60 * 1000);
+const countdown = setInterval(function() {
+const currentTime = new Date().getTime();
+const distance = endTime - currentTime;
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+const countdownElement = document.getElementById('countdown');
+if (countdownElement) {
+countdownElement.innerHTML = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+if (distance < 0) {
+clearInterval(countdown);
+if (countdownElement) {
+countdownElement.innerHTML = "OFERTA ENCERRADA";
+}
+}
+}, 1000);
+}
+updateCountdown();
+});
+</script>
+</body>
+</html>
