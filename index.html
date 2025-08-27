@@ -52,9 +52,23 @@ animation: pulseGlow 2s ease-in-out infinite alternate;
 from { box-shadow: 0 0 60px rgba(0, 212, 170, 0.4); }
 to { box-shadow: 0 0 100px rgba(0, 212, 170, 0.6); }
 }
+@media (max-width: 640px) {
+/* Reduz o brilho para evitar overflow no mobile */
+.pulse-glow { box-shadow: 0 0 40px rgba(0, 212, 170, 0.45); }
+/* Clippa qualquer transbordo horizontal de seções no iOS */
+section { overflow-x: clip; }
+/* Garante que o wrapper do mockup não gere scroll lateral */
+.hero-glow { overflow: clip; }
+}
+/* Evita faixa branca no iOS (overflow horizontal) */
+html, body { overflow-x: hidden; width: 100%; }
+/* Imagens sempre responsivas */
+img, video { max-width: 100%; height: auto; }
+/* Evita que textos longos estourem em mobile */
+a { word-break: break-word; }
 </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
 <section class="gradient-bg min-h-screen relative overflow-hidden">
 <div class="absolute inset-0" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20technology%20workspace%20with%20purple%20gradient%20background%20and%20floating%20digital%20elements%20coding%20screens%20and%20development%20tools%20in%20a%20futuristic%20office%20environment%20with%20soft%20lighting%20and%20clean%20minimalist%20design%20professional%20atmosphere&width=1920&height=1080&seq=hero-bg&orientation=landscape'); background-size: cover; background-position: center; opacity: 0.1;"></div>
 <div class="relative z-10 container mx-auto px-4 sm:px-6 py-10 sm:py-16 min-h-screen flex items-center">
@@ -100,7 +114,7 @@ VITALÍCIO
 </div>
 </div>
 </div>
-<a href="https://checkout.perfectpay.com.br/pay/PPU38CPUI10?" class="block w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold text-lg sm:text-xl px-6 sm:px-12 py-3 sm:py-4 !rounded-button transition-all duration-300 animate-pulse whitespace-nowrap text-center">
+<a href="https://checkout.perfectpay.com.br/pay/PPU38CPUI10?" class="block w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold text-lg sm:text-xl px-6 sm:px-12 py-3 sm:py-4 !rounded-button transition-all duration-300 animate-pulse whitespace-normal sm:whitespace-nowrap text-center">
 QUERO ACELERAR MEUS PROJETOS AGORA
 </a>
 <div class="mt-4 text-center sm:text-left">
@@ -395,7 +409,7 @@ VITALÍCIO
 </div>
 </div>
 </div>
-<a href="https://checkout.perfectpay.com.br/pay/PPU38CPUI10?" class="inline-block w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold text-xl sm:text-2xl px-8 sm:px-16 py-4 sm:py-6 !rounded-button transition-all duration-300 pulse-glow whitespace-nowrap mb-8 text-center">
+<a href="https://checkout.perfectpay.com.br/pay/PPU38CPUI10?" class="inline-block w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold text-xl sm:text-2xl px-8 sm:px-16 py-4 sm:py-6 !rounded-button transition-all duration-300 pulse-glow whitespace-normal sm:whitespace-nowrap mb-8 text-center">
 SIM, EU QUERO ACELERAR MEUS PROJETOS AGORA!
 </a>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-gray-400 text-sm sm:text-base">
