@@ -53,12 +53,10 @@ from { box-shadow: 0 0 60px rgba(0, 212, 170, 0.4); }
 to { box-shadow: 0 0 100px rgba(0, 212, 170, 0.6); }
 }
 @media (max-width: 640px) {
-/* Reduz o brilho para evitar overflow no mobile */
-.pulse-glow { box-shadow: 0 0 40px rgba(0, 212, 170, 0.45); }
-/* Clippa qualquer transbordo horizontal de seções no iOS */
-section { overflow-x: clip; }
-/* Garante que o wrapper do mockup não gere scroll lateral */
-.hero-glow { overflow: clip; }
+  /* Reduz o brilho para evitar overflow no mobile */
+  .pulse-glow { box-shadow: 0 0 40px rgba(0, 212, 170, 0.45); }
+  /* Garante que o wrapper do mockup não gere scroll lateral */
+  .hero-glow { overflow: clip; }
 }
 /* Evita faixa branca no iOS (overflow horizontal) */
 html, body { overflow-x: hidden; width: 100%; }
@@ -239,7 +237,19 @@ As dicas e truques são apresentadas de forma lógica e progressiva, desde os fu
 <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-6 sm:p-8 md:p-10 border border-white/10 text-center md:text-left">
 <div class="grid md:grid-cols-5 gap-6 sm:gap-8 items-center">
 <div class="md:col-span-2">
-<img src="https://readdy.ai/api/search-image?query=100%25%20satisfaction%20guaranteed%20badge%20seal%20with%20purple%20and%20gold%20colors%20premium%20quality%20assurance%20emblem%20on%20transparent%20background%20professional%20clean%20design&width=400&height=400&seq=guarantee&orientation=squarish" alt="Selo de Garantia" class="w-36 h-36 sm:w-48 sm:h-48 mx-auto md:mx-0">
+<svg viewBox="0 0 128 128" role="img" aria-label="Selo de Garantia" class="w-36 h-36 sm:w-48 sm:h-48 mx-auto md:mx-0">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="56" fill="url(#g)"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="4"/>
+  <path d="M42 66 l14 14 l30 -34" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="64" y="28" text-anchor="middle" font-family="Inter, system-ui, -apple-system" font-size="12" fill="#fff" opacity="0.9">100% GARANTIA</text>
+  <text x="64" y="112" text-anchor="middle" font-family="Inter, system-ui, -apple-system" font-size="10" fill="#ffffff" opacity="0.85">SATISFAÇÃO</text>
+</svg>
 </div>
 <div class="md:col-span-3">
 <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-3 sm:mb-4">Garantia de 7 Dias Sem Complicação</h2>
